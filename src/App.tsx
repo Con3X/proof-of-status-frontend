@@ -1,12 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+
+import UserStatus from './components/UserStatus';
+import Chat from './components/Chat';
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
@@ -17,8 +21,17 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
       </header>
+      <div className="App-body">
+        <h1>Proof of Status</h1>
+        <div>
+          Financial Capability Verification for Social and Business Interactions
+        </div>
+        <div>(based on Bitcoin)</div>
+        <UserStatus />
+        <Chat />
+      </div>
     </div>
   );
 }
